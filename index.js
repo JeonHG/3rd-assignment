@@ -38,6 +38,7 @@ window.onload = async () => {
 			img.src = element.medium_cover_image;
 			img_div.append(img)
 			img_div.classList.add("Movie__Img","col-4", "px-0")
+			card.setAttribute("OnClick",`location.href='https://jeonhg.github.io/3rd-assignment/detail?id=${element.id}'`)
 			element.genres.forEach(item => {
 				const span = document.createElement('span')
 				span.innerText = item
@@ -56,6 +57,8 @@ window.onload = async () => {
 			desc_div.classList.add("Movie__Column","col-8")
 			card.classList.add("card", "col-xs-12", "col-md-4","row","mx-5")
 			card.append(img_div, desc_div);
+			card.setAttribute("style","cursor:pointer")
+			
 			row.appendChild(card);		
 		});
 		app.appendChild(row)
