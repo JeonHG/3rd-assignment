@@ -64,7 +64,7 @@ window.onload = async () => {
 		const link = document.createElement("a");
 		link.innerText = "디테일 페이지로 이동하기";
 		app.appendChild(link)
-		link.setAttribute("href","detail.html")
+		link.setAttribute("href","detail.html"+"?userid=121")
 	};
 
 	await main();
