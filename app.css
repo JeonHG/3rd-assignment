@@ -1,0 +1,38 @@
+img {
+    max-width: 100%;
+}
+body {
+    background-color: #eff3f7;
+}
+.card {
+    height: 200px;
+    margin: 20px 0 20px 0;
+}
+.Movie__Img {
+    margin-top: -20px;
+}
+.Movie__Column {
+    margin-top: 40px;
+}
+.Movie__Column h1 {
+    font-size: 20px;
+    font-weight: 600;
+}
+.Movie__Column .Movie__Genres {
+    display: flex;
+    flex-wrap: wrap;
+    color: #b4b5bd;
+}
+.Movie__Genres span{
+    margin-right: 10px;
+    font-size: 14px;
+}
+.Movie__Synopsis{
+    font-size: 14px;
+    width: 200px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #b4b5bd;
+}
