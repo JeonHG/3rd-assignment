@@ -1,44 +1,63 @@
-img {
-    max-width: 100%;
-}
-body {
-    /* background-color: #eff3f7; */
-    background-color: red
-}
-.card {
-    height: 250px;
-    margin: 20px 0 20px 0;
-}
-.Movie__Img {
-    margin-top: -20px;
-}
-.Movie__Column {
-    margin-top: 40px;
-}
-.Movie__Column h1 {
-    font-size: 20px;
-    font-weight: 600;
-}
-.Movie__Column .Movie__Genres {
+.row {
+    padding: 50px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+}
+body {
+    background-color: #eff3f7;
+}
+
+img {
+    width:100%;
+}
+
+.card {
+    padding: 0 20px;        
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    box-shadow: 0 8px 38px rgba(133, 133, 133, 0.3), 0 5px 12px rgba(133, 133, 133, 0.22);
+    width: 95%;
+    height: 50%;
+}
+.card_wrap{
+    margin-bottom: -150px;
+}
+.Movie__Genres{
+    font-size : 14px;
     color: #b4b5bd;
+    margin-bottom: 5%;
 }
 .Movie__Genres span{
     margin-right: 10px;
-    font-size: 14px;
 }
 .Movie__Synopsis{
-    font-size: 14px;
-    width: 90%;
-    display: inline-block;
-    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* 라인수 */ 
+    -webkit-box-orient: vertical; 
+    word-wrap:break-word;
+    font-size : 14px;
     color: #b4b5bd;
 }
-@media (max-width: 1300px){
-    .card{
-        height: 200px;
-    }
+.Movie__Column h1 {
+    font-size : 20px;
+    font-weight: 600;
+}
+
+.Movie__Img {
+    width:33%;
+    position: relative;
+    top: -20px;
+    box-shadow: -10px 19px 38px rgba(83,83,83,.3), 10px 15px 12px rgba(80,80,80,.22);
+}
+.Movie__Column {
+    padding :10% 0;
+    width:60%;
 }
