@@ -10,6 +10,7 @@ body {
 
 img {
     width:100%;
+    margin-bottom: 5%;
 }
 
 .card {
@@ -46,7 +47,7 @@ img {
     font-size : 14px;
     color: #b4b5bd;
 }
-.Movie__Column h1 {
+h1 {
     font-size : 20px;
     font-weight: 600;
 }
@@ -60,4 +61,28 @@ img {
 .Movie__Column {
     padding :10% 0;
     width:60%;
+}
+.detail_card{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.detail_img_div{
+    width: 30%;
+}
+.detail_desc_div{
+    width: 50%;
+}
+.desc{
+    margin-top: 5%;
+}
+@media (max-width:768px){
+    .detail_img_div{
+        width: 100%;
+    }
+    .detail_desc_div{
+        width:100%;
+    }
 }
