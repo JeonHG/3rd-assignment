@@ -22,9 +22,17 @@ window.onload = async () => {
 		// https://medium.com/@crunchtech/object-destructuring-best-practice-in-javascript-9c8794699a0d
 		// 디스트럭쳐링 할당
 		console.log(movlist);
+		const aaa = await axios.get('https://yts.lt/api/v2/list_movies.json?sort_by=download_count')		
 		const row = document.createElement("div")
 		// row.classList.add("row","px-5")
 		row.classList.add("row","px-1","py-5","d-flex", "justify-content-center")
+		arr = [1,2,3,4,5] 
+		for (var i=0; i<length(arr); i++){
+			console.log(arr[i])
+		}
+		arr.forEach(element => {
+			console.log(element)
+		})
 		movlist.forEach(element => {
 			const card = document.createElement("div");
 			const img_div = document.createElement("div");
@@ -34,7 +42,7 @@ window.onload = async () => {
 			const desc_div = document.createElement("div");
 			const synopsis = document.createElement('div');	
 			const lines_ellips = document.createElement("div");
-			title.innerText = element.title;
+			title.innerText = element.title
 			img.src = element.medium_cover_image;
 			img_div.append(img)
 			img_div.classList.add("Movie__Img","col-4", "px-0")
@@ -57,7 +65,7 @@ window.onload = async () => {
 			desc_div.classList.add("Movie__Column","col-8")
 			card.classList.add("card", "col-xs-12", "col-md-4","row","mx-5")
 			card.append(img_div, desc_div);
-			card.setAttribute("style","cursor:pointer")
+			card.setAttribute("style","cursor:pointer");
 			
 			row.appendChild(card);		
 		});
