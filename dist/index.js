@@ -63,10 +63,6 @@ window.onload = async () => {
 		app.appendChild(row)
 		// app.classList.add("container")
 		app.removeChild(loading);
-		const link = document.createElement("a");
-		link.innerText = "디테일 페이지로 이동하기";
-		app.appendChild(link)
-		link.setAttribute("href","detail")
 	};
 
 	await main();
