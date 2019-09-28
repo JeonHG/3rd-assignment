@@ -26,9 +26,6 @@ window.onload = async () => {
 		const row = document.createElement("div")
 		// row.classList.add("row","px-5")
 		row.classList.add("row","px-1","py-5","d-flex", "justify-content-center")
-		arr.forEach(element => {
-			console.log(element)
-		})
 		movlist.forEach(element => {
 			const card = document.createElement("div");
 			const img_div = document.createElement("div");
