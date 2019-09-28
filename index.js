@@ -26,10 +26,6 @@ window.onload = async () => {
 		const row = document.createElement("div")
 		// row.classList.add("row","px-5")
 		row.classList.add("row","px-1","py-5","d-flex", "justify-content-center")
-		arr = [1,2,3,4,5] 
-		for (var i=0; i<length(arr); i++){
-			console.log(arr[i])
-		}
 		arr.forEach(element => {
 			console.log(element)
 		})
